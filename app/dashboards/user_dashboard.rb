@@ -11,6 +11,7 @@ class UserDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     age: Field::Number,
+    video: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -24,6 +25,7 @@ class UserDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :age,
+    :video,
     :created_at,
   ].freeze
 
@@ -33,6 +35,7 @@ class UserDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :age,
+    :video,
     :created_at,
     :updated_at,
   ].freeze
@@ -43,6 +46,7 @@ class UserDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :name,
     :age,
+    :video,
   ].freeze
 
   # Overwrite this method to customize how users are displayed
